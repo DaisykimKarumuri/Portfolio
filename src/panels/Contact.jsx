@@ -57,7 +57,7 @@ function Contact({ closePanel }) {
             </p>
 
             <p className="mt-2 break-all text-gray-300">
-              YOUR_EMAIL@example.com
+              karumuridaisy@gmail.com
             </p>
           </a>
 
@@ -71,13 +71,13 @@ function Contact({ closePanel }) {
             </p>
 
             <p className="mt-2 text-gray-300">
-              YOUR_PHONE_NUMBER
+              8897611493
             </p>
           </div>
 
           {/* GitHub */}
           <a
-            href="YOUR_GITHUB_URL"
+            href="https://github.com/DaisykimKarumuri"
             target="_blank"
             rel="noreferrer"
             className="rounded-2xl border border-white/10
@@ -96,7 +96,7 @@ function Contact({ closePanel }) {
 
           {/* LinkedIn */}
           <a
-            href="YOUR_LINKEDIN_URL"
+            href="https://www.linkedin.com/in/daisykim-karumuri-56a168394/"
             target="_blank"
             rel="noreferrer"
             className="rounded-2xl border border-white/10
@@ -109,7 +109,7 @@ function Contact({ closePanel }) {
             </p>
 
             <p className="mt-2 text-gray-300">
-              Daisy Kim Karumuri
+              DaisyKim Karumuri
             </p>
           </a>
 

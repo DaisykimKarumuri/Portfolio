@@ -111,11 +111,11 @@ function Education({ closePanel }) {
             </p>
 
             <h3 className="mt-2 text-xl font-bold text-white">
-              Higher Secondary Education
+              Sri Srinivasa Junior college
             </h3>
 
             <p className="mt-2 text-gray-400">
-              Academic Score: 94%
+              Percentage: 94%
             </p>
           </div>
 
