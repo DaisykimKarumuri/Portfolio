@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 function Hero({ openPanel }) {
+  const [showResume, setShowResume] = useState(false);
+
   const sections = [
     {
       title: "About",
@@ -17,8 +21,8 @@ function Hero({ openPanel }) {
       id: "education",
     },
     {
-        title: "Certificates",
-        id: "certificates"
+      title: "Certificates",
+      id: "certificates",
     },
     {
       title: "Contact",
@@ -26,8 +30,9 @@ function Hero({ openPanel }) {
     },
   ];
 
+
   return (
-    <main className="flex min-h-[85vh] flex-col items-center justify-center px-6">
+    <main className="relative flex min-h-screen flex-col items-center justify-center px-6">
 
       {/* Hero Content */}
       <div className="max-w-4xl text-center">
@@ -49,33 +54,49 @@ function Hero({ openPanel }) {
           and solve real-world problems with code.
         </p>
 
-        <button
-          onClick={() => openPanel("projects")}
-          className="mt-8 rounded-full bg-white px-8 py-4
-                     font-semibold text-black
-                     transition hover:scale-105"
-        >
-          Explore My Work →
-        </button>
+        {/* Explore + Resume */}
+        <div className="mt-8 flex items-center justify-center gap-4">
+
+          <button
+            onClick={() => openPanel("projects")}
+            className="rounded-full bg-white px-8 py-4
+                       font-semibold text-black
+                       transition hover:scale-105"
+          >
+            Explore My Work →
+          </button>
+
+          <button
+            onClick={() => setShowResume(true)}
+            className="rounded-full bg-white px-8 py-4
+                       font-semibold text-black
+                       transition hover:scale-105"
+          >
+            My Resume →
+          </button>
+
+        </div>
 
       </div>
 
       {/* Section Cards */}
       <div className="mt-8 flex w-full items-center justify-center gap-4
-                whitespace-nowrap overflow-x-auto scrollbar-hide
-                px-4 py-5">
+                      overflow-x-auto whitespace-nowrap
+                      scrollbar-hide px-4 py-5">
 
         {sections.map((section) => (
           <button
             key={section.id}
             onClick={() => openPanel(section.id)}
-            className="max-w-[150px] group rounded-2xl border border-white/10
+            className="group w-[150px] shrink-0 rounded-2xl
+                       border border-white/10
                        bg-white/5 p-6 text-left
                        transition duration-300
                        hover:-translate-y-2
                        hover:border-purple-500/50
                        hover:bg-white/10"
           >
+
             <div className="flex items-center justify-between">
 
               <span className="text-lg font-semibold">
@@ -97,6 +118,46 @@ function Hero({ openPanel }) {
         ))}
 
       </div>
+
+      {/* Resume Modal */}
+      {showResume && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center
+                     bg-black/80 p-6 backdrop-blur-md"
+          onClick={() => setShowResume(false)}
+        >
+
+          <div
+            className="relative max-h-[92vh] max-w-4xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+
+            {/* Close Button */}
+            <button
+              onClick={() => setShowResume(false)}
+              className="absolute -right-3 -top-3 z-10
+                         flex h-10 w-10 items-center justify-center
+                         rounded-full border border-white/20
+                         bg-[#111118] text-xl text-gray-300
+                         transition hover:bg-white/10
+                         hover:text-white"
+            >
+              ✕
+            </button>
+
+            {/* Resume Image */}
+            <img
+              src="/Portfolio/resume-preview.png"
+              alt="DaisyKim Karumuri Resume"
+              className="max-h-[90vh] w-auto rounded-xl
+                         border border-white/10
+                         shadow-2xl"
+            />
+
+          </div>
+
+        </div>
+      )}
 
     </main>
   );
