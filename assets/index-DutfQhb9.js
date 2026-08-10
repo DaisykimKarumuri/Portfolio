@@ -10,15 +10,19 @@ Error generating stack: `+e.message+`
                        font-semibold text-black\r
                        transition hover:scale-105`,children:`Explore My Work →`}),(0,f.jsx)(`button`,{onClick:()=>n(!0),className:`rounded-full bg-white px-8 py-4\r
                        font-semibold text-black\r
-                       transition hover:scale-105`,children:`My Resume →`})]})]}),(0,f.jsx)(`div`,{className:`section-cards mt-8 flex w-full items-center justify-center gap-4\r
-                      overflow-x-auto whitespace-nowrap scrollbar-hide\r
-                      px-4 py-5`,children:[{title:`About`,id:`about`},{title:`Skills`,id:`skills`},{title:`Projects`,id:`projects`},{title:`Education`,id:`education`},{title:`Certificates`,id:`certificates`},{title:`Contact`,id:`contact`}].map(t=>(0,f.jsxs)(`button`,{onClick:()=>e(t.id),className:`group w-[150px] shrink-0 rounded-2xl\r
+                       transition hover:scale-105`,children:`My Resume →`})]})]}),(0,f.jsx)(`div`,{className:`mt-8 w-full px-4 py-5\r
+                     grid grid-cols-2 gap-4\r
+                     md:flex md:items-center md:justify-center\r
+                     md:gap-4 md:overflow-x-auto\r
+                     md:whitespace-nowrap\r
+                     scrollbar-hide`,children:[{title:`About`,id:`about`},{title:`Skills`,id:`skills`},{title:`Projects`,id:`projects`},{title:`Education`,id:`education`},{title:`Certificates`,id:`certificates`},{title:`Contact`,id:`contact`}].map(t=>(0,f.jsxs)(`button`,{onClick:()=>e(t.id),className:`group w-full rounded-2xl\r
                        border border-white/10\r
-                       bg-white/5 p-6 text-left\r
+                       bg-white/5 p-5 text-left\r
                        transition duration-300\r
                        hover:-translate-y-2\r
                        hover:border-purple-500/50\r
-                       hover:bg-white/10`,children:[(0,f.jsxs)(`div`,{className:`flex items-center justify-between`,children:[(0,f.jsx)(`span`,{className:`text-lg font-semibold`,children:t.title}),(0,f.jsx)(`span`,{className:`text-gray-500 transition\r
+                       hover:bg-white/10\r
+                       md:w-[150px] md:shrink-0`,children:[(0,f.jsxs)(`div`,{className:`flex items-center justify-between`,children:[(0,f.jsx)(`span`,{className:`text-lg font-semibold`,children:t.title}),(0,f.jsx)(`span`,{className:`text-gray-500 transition\r
                                group-hover:text-purple-400`,children:`↗`})]}),(0,f.jsxs)(`p`,{className:`mt-3 text-sm text-gray-500`,children:[`View `,t.title.toLowerCase()]})]},t.id))}),t&&(0,f.jsx)(`div`,{className:`fixed inset-0 z-50 flex items-center justify-center\r
                      bg-black/80 p-6 backdrop-blur-md`,onClick:()=>n(!1),children:(0,f.jsxs)(`div`,{className:`relative max-h-[92vh] max-w-4xl`,onClick:e=>e.stopPropagation(),children:[(0,f.jsx)(`button`,{onClick:()=>n(!1),className:`absolute -right-3 -top-3 z-10\r
                          flex h-10 w-10 items-center justify-center\r
