@@ -10,9 +10,9 @@ Error generating stack: `+e.message+`
                        font-semibold text-black\r
                        transition hover:scale-105`,children:`Explore My Work →`}),(0,f.jsx)(`button`,{onClick:()=>n(!0),className:`rounded-full bg-white px-8 py-4\r
                        font-semibold text-black\r
-                       transition hover:scale-105`,children:`My Resume →`})]})]}),(0,f.jsx)(`div`,{className:`mt-8 flex w-full items-center justify-center gap-4\r
-                      overflow-x-auto whitespace-nowrap\r
-                      scrollbar-hide px-4 py-5`,children:[{title:`About`,id:`about`},{title:`Skills`,id:`skills`},{title:`Projects`,id:`projects`},{title:`Education`,id:`education`},{title:`Certificates`,id:`certificates`},{title:`Contact`,id:`contact`}].map(t=>(0,f.jsxs)(`button`,{onClick:()=>e(t.id),className:`group w-[150px] shrink-0 rounded-2xl\r
+                       transition hover:scale-105`,children:`My Resume →`})]})]}),(0,f.jsx)(`div`,{className:`section-cards mt-8 flex w-full items-center justify-center gap-4\r
+                      overflow-x-auto whitespace-nowrap scrollbar-hide\r
+                      px-4 py-5`,children:[{title:`About`,id:`about`},{title:`Skills`,id:`skills`},{title:`Projects`,id:`projects`},{title:`Education`,id:`education`},{title:`Certificates`,id:`certificates`},{title:`Contact`,id:`contact`}].map(t=>(0,f.jsxs)(`button`,{onClick:()=>e(t.id),className:`group w-[150px] shrink-0 rounded-2xl\r
                        border border-white/10\r
                        bg-white/5 p-6 text-left\r
                        transition duration-300\r
