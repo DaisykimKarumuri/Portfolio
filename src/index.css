@@ -21,16 +21,18 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
-@media (max-width: 768px) {
-    .projects-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        overflow-x: hidden;
-    }
 
-    .project-card {
-        width: 100%;
-        min-width: 0;
-    }
+@media (max-width: 768px) {
+  .section-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .section-cards button {
+    width: 100%;
+    min-width: 0;
+  }
 }

@@ -80,9 +80,9 @@ function Hero({ openPanel }) {
       </div>
 
       {/* Section Cards */}
-      <div className="mt-8 flex w-full items-center justify-center gap-4
-                      overflow-x-auto whitespace-nowrap
-                      scrollbar-hide px-4 py-5">
+      <div className="section-cards mt-8 flex w-full items-center justify-center gap-4
+                      overflow-x-auto whitespace-nowrap scrollbar-hide
+                      px-4 py-5">
 
         {sections.map((section) => (
           <button
