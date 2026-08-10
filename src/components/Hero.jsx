@@ -80,21 +80,25 @@ function Hero({ openPanel }) {
       </div>
 
       {/* Section Cards */}
-      <div className="section-cards mt-8 flex w-full items-center justify-center gap-4
-                      overflow-x-auto whitespace-nowrap scrollbar-hide
-                      px-4 py-5">
+      <div className="mt-8 w-full px-4 py-5
+                     grid grid-cols-2 gap-4
+                     md:flex md:items-center md:justify-center
+                     md:gap-4 md:overflow-x-auto
+                     md:whitespace-nowrap
+                     scrollbar-hide">
 
         {sections.map((section) => (
           <button
             key={section.id}
             onClick={() => openPanel(section.id)}
-            className="group w-[150px] shrink-0 rounded-2xl
+            className="group w-full rounded-2xl
                        border border-white/10
-                       bg-white/5 p-6 text-left
+                       bg-white/5 p-5 text-left
                        transition duration-300
                        hover:-translate-y-2
                        hover:border-purple-500/50
-                       hover:bg-white/10"
+                       hover:bg-white/10
+                       md:w-[150px] md:shrink-0"
           >
 
             <div className="flex items-center justify-between">
